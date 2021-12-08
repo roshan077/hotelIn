@@ -1,0 +1,2 @@
+rootProject.name = "Hotel Nearby (HNBy)"
+include ':app'

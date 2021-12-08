@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.LYPFormActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/addBarLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#df7904 ">
+
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/materialToolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:padding="1dp"
+                        android:src="@drawable/ic_baseline_arrow_back" />
+
+                    <TextView
+                        android:id="@+id/tvNavLYP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:padding="15dp"
+                        android:text="Hotel Information"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.appbar.MaterialToolbar>
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <TextView
+                android:id="@+id/tvHeading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addBarLayout"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Now, fill up required details"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvName"
+                style="@style/tv_Hotel_Form"
+                android:layout_below="@+id/tvHeading"
+                android:text="Name of your Property"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etName"
+                style="@style/et_Hotel_Form"
+                android:layout_below="@+id/tvName"
+                android:hint="e.g. Himalayan Hotel" />
+
+            <TextView
+                android:id="@+id/tvStreet"
+                style="@style/tv_Hotel_Form"
+                android:layout_below="@+id/etName"
+                android:layout_marginTop="23dp"
+                android:text="Street Address"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etStreet"
+                style="@style/et_Hotel_Form"
+                android:layout_below="@+id/tvStreet"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tvCountry"
+                style="@style/tv_Hotel_Form"
+                android:layout_below="@+id/etStreet"
+                android:text="Country/Region"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCountry"
+                style="@style/et_Hotel_Form"
+                android:layout_below="@+id/tvCountry"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tvCity"
+                style="@style/tv_Hotel_Form"
+                android:layout_below="@+id/etCountry"
+                android:text="City"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etCity"
+                style="@style/et_Hotel_Form"
+                android:layout_below="@+id/tvCity"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tvMap"
+                style="@style/tv_Hotel_Form"
+                android:layout_below="@+id/etCity"
+                android:text="Map"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etMap"
+                style="@style/et_Hotel_Form"
+                android:layout_below="@+id/tvMap"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tvPropertyDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/etMap"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Property Details"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNoOfRooms"
+                style="@style/tv_Hotel_Form"
+                android:layout_below="@+id/tvPropertyDetails"
+                android:text="No of Rooms"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etNoOfRooms"
+                style="@style/et_Hotel_Form"
+                android:layout_below="@+id/tvNoOfRooms"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tvNoOfGuest"
+                style="@style/tv_Hotel_Form"
+                android:layout_below="@+id/etNoOfRooms"
+                android:text="How many guests can stay?"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spinnerNoOfGuest"
+                style="@style/et_Hotel_Form"
+                android:layout_below="@+id/tvNoOfGuest"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/tvUse"
+                style="@style/tv_Hotel_Form"
+                android:layout_below="@+id/spinnerNoOfGuest"
+                android:text="What can guests use at your place?"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvUse">
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvUse"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/cb1" />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rb1"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/cb2" />
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rb2"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/cb3" />
+
+                <RadioButton
+                    android:id="@+id/rb4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rb3"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/cb4" />
+
+                <RadioButton
+                    android:id="@+id/rb5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rb4"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/cb5" />
+
+                <RadioButton
+                    android:id="@+id/rb6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rb5"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/cb6" />
+
+                <RadioButton
+                    android:id="@+id/rb7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cb6"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/cb7" />
+
+                <RadioButton
+                    android:id="@+id/rb8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rb7"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/cb8" />
+
+                <RadioButton
+                    android:id="@+id/rb9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rb8"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/cb9" />
+
+                <RadioButton
+                    android:id="@+id/rb10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rb9"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/cb10" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tvHouseRules"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="House Rule"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/swSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvHouseRules"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:text="Smoking allowed"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/swPet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/swSmoke"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:text="Pets allowed"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/swChildren"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/swPet"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:text="Children allowed"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/swParties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/swChildren"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:text="Parties/events allowed"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <TextView
+                android:id="@+id/tvCheckIn"
+                style="@style/tv_Hotel_Form"
+                android:layout_below="@+id/swParties"
+                android:text="Check-in"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCheckInFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCheckIn"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:text="From" />
+
+            <TextView
+                android:id="@+id/tvCheckInFromTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCheckIn"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_toRightOf="@+id/tvCheckInFrom"
+                android:text="Tap here"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCheckInUntil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCheckIn"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_toRightOf="@+id/tvCheckInFromTime"
+                android:text="Until" />
+
+            <TextView
+                android:id="@+id/tvCheckInUntilTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCheckIn"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_toRightOf="@+id/tvCheckInUntil"
+                android:text="Tap here"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCheckout"
+                style="@style/tv_Hotel_Form"
+                android:layout_below="@+id/tvCheckInFrom"
+                android:text="Check-out"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCheckOutFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCheckout"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:text="From" />
+
+            <TextView
+                android:id="@+id/tvCheckOutFromTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCheckout"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_toRightOf="@+id/tvCheckOutFrom"
+                android:text="Tap here"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvCheckOutUntil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCheckout"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_toRightOf="@+id/tvCheckOutFromTime"
+                android:text="Until" />
+
+            <TextView
+                android:id="@+id/tvCheckOutUntilTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCheckout"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_toRightOf="@+id/tvCheckOutUntil"
+                android:text="Tap here"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvUploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvCheckOutUntilTime"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Upload your Hotel Image"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgUploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="235dp"
+                android:layout_below="@id/tvUploadImage"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/noimg2" />
+
+
+            <Button
+                android:id="@+id/btnPickImage"
+                style="@style/Login_Design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgUploadImage"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#C89955"
+                android:gravity="center"
+                android:text="Pick photo"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnPickImage"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="40dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Price"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvPrice"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="0dp"
+                android:text="Rs: "
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etPrice"
+                style="@style/et_Hotel_Form"
+                android:layout_below="@+id/tvPrice"
+                android:layout_marginLeft="0dp"
+                android:layout_toRightOf="@+id/tvPrice2"
+                android:hint="e.g. 3000"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+            <Button
+                android:id="@+id/btnSubmit"
+                style="@style/Login_Design"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etPrice"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/round"
+                android:backgroundTint="#459370"
+                android:gravity="center"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

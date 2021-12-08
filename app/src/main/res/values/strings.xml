@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Hotel Nearby (HNBy)</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string-array name="noOfGuest">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="cb1">Sauna</string>
+    <string name="cb2">Bar</string>
+    <string name="cb3">Garden</string>
+    <string name="cb4">Terrace</string>
+    <string name="cb5">Hot tub/Jacuzzi</string>
+    <string name="cb6">Heating</string>
+    <string name="cb7">Free Wi-Fi</string>
+    <string name="cb8">Air conditioning</string>
+    <string name="cb9">On-site parking</string>
+    <string name="cb10">Swimming pool</string>
+
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/menu_account"
+        android:icon="@drawable/ic_person"
+        android:title="Manage Account" />
+
+    <item
+        android:id="@+id/menu_favorite"
+        android:icon="@drawable/ic_baseline_favorite"
+        android:title="Favorite" />
+
+    <item
+        android:id="@+id/menu_hotel"
+        android:icon="@drawable/ic_baseline_hotel"
+        android:title="List your Property" />
+
+    <item android:title="Help and Support">
+        <menu>
+            <item
+                android:id="@+id/menu_customerService"
+                android:icon="@drawable/ic_baseline_customer_service"
+                android:title="Customer Service" />
+
+            <item
+                android:id="@+id/menu_FAQ"
+                android:icon="@drawable/ic_baseline_help"
+                android:title="FAQ" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/menu_Logout"
+        android:icon="@drawable/logout"
+        android:title="Log out" />
+
+</menu>

@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="48dp"
+            android:layout_height="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_delete_24" />
+
+        <ImageButton
+            android:id="@+id/btnUpdate"
+            android:layout_width="48dp"
+            android:layout_height="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="62dp"
+            android:layout_marginRight="62dp"
+            android:layout_toLeftOf="@+id/btnDelete"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_baseline_update_24" />
+
+        <ImageView
+            android:id="@+id/imgHotelImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/noimg2" />
+
+        <TextView
+            android:id="@+id/tvPropertyName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/imgHotelImage"
+            android:layout_toRightOf="@id/imgHotelImage"
+            android:text="Property Name" />
+
+
+        <TextView
+            android:id="@+id/tvStreetAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPropertyName"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/imgHotelImage"
+            android:layout_toRightOf="@+id/imgHotelImage"
+            android:text="Street Address" />
+
+        <TextView
+            android:id="@+id/tvCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvStreetAddress"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imgHotelImage"
+            android:layout_toRightOf="@+id/imgHotelImage"
+            android:text="City" />
+
+        <TextView
+            android:id="@+id/tvCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCity"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/imgHotelImage"
+            android:layout_toRightOf="@+id/imgHotelImage"
+            android:text="Country" />
+
+        <TextView
+            android:id="@+id/tvHotelDetails"
+            style="@style/tv_Hotel_Form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCountry"
+            android:layout_marginTop="10dp"
+            android:text="Hotel Details:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNoOfRooms"
+            style="@style/tv_Hotel_Form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHotelDetails"
+            android:layout_marginTop="10dp"
+            android:text="No of Rooms: " />
+
+        <TextView
+            android:id="@+id/tvNoOfRooms2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHotelDetails"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tvNoOfRooms" />
+
+        <TextView
+            android:id="@+id/tvNoOfGuest"
+            style="@style/tv_Hotel_Form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNoOfRooms"
+            android:layout_marginTop="10dp"
+            android:text="How many guests can stay?" />
+
+        <TextView
+            android:id="@+id/tvNoOfGuest2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNoOfRooms"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/tvNoOfGuest" />
+
+        <TextView
+            android:id="@+id/tvGuestCanUse"
+            style="@style/tv_Hotel_Form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNoOfGuest"
+            android:layout_marginTop="10dp"
+            android:text="What can guest can use?" />
+
+        <TextView
+            android:id="@+id/tvGuestCanUse2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNoOfGuest"
+            android:layout_toRightOf="@+id/tvGuestCanUse"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tvHotelRules"
+            style="@style/tv_Hotel_Form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvGuestCanUse"
+            android:layout_marginTop="10dp"
+            android:text="Hotel Rules:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSmoke"
+            style="@style/tv_Hotel_Form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHotelRules"
+            android:layout_marginTop="10dp"
+            android:text="Smoking allowed: " />
+
+        <TextView
+            android:id="@+id/tvSmoke2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHotelRules"
+            android:layout_toRightOf="@+id/tvSmoke"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tvPet"
+            style="@style/tv_Hotel_Form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSmoke"
+            android:layout_marginTop="10dp"
+            android:text="Pet allowed: " />
+
+        <TextView
+            android:id="@+id/tvPet2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSmoke"
+            android:layout_toRightOf="@+id/tvPet"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tvChildren"
+            style="@style/tv_Hotel_Form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPet"
+            android:layout_marginTop="10dp"
+            android:text="Children allowed: " />
+
+        <TextView
+            android:id="@+id/tvChildren2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPet"
+            android:layout_toRightOf="@+id/tvChildren"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tvParties"
+            style="@style/tv_Hotel_Form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvChildren"
+            android:layout_marginTop="10dp"
+            android:text="Parties/Events allowed: " />
+
+        <TextView
+            android:id="@+id/tvParties2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPet"
+            android:layout_toRightOf="@+id/tvParties"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/tvCheckIn"
+            style="@style/tv_Hotel_Form"
+            android:layout_below="@+id/tvParties"
+            android:text="Check-in"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCheckInFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCheckIn"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:text="From:" />
+
+        <TextView
+            android:id="@+id/tvCheckInFromTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCheckIn"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@+id/tvCheckInFrom"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCheckInUntil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCheckIn"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@+id/tvCheckInFromTime"
+            android:text="Until:" />
+
+        <TextView
+            android:id="@+id/tvCheckInUntilTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCheckIn"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@+id/tvCheckInUntil"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCheckout"
+            style="@style/tv_Hotel_Form"
+            android:layout_below="@+id/tvCheckInFrom"
+            android:text="Check-out"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCheckOutFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCheckout"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:text="From:" />
+
+        <TextView
+            android:id="@+id/tvCheckOutFromTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCheckout"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@+id/tvCheckOutFrom"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvCheckOutUntil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCheckout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@+id/tvCheckOutFromTime"
+            android:text="Until:" />
+
+        <TextView
+            android:id="@+id/tvCheckOutUntilTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCheckout"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_toRightOf="@+id/tvCheckOutUntil"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCheckOutFrom"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Price"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPrice2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPrice"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="0dp"
+            android:text="Rs: "
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvPrice3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPrice"
+            android:layout_toRightOf="@+id/tvPrice2"
+            android:layout_marginLeft="0dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
